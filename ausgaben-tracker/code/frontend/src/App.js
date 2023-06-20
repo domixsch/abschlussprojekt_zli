@@ -2,14 +2,19 @@ import bg from './img/bg.png'
 import styled from 'styled-components'
 import { MainLayout } from './styles/layouts';
 import Orb from './components/Orb/Orb';
+import Navigation from './components/Navigation/Navigation';
+import { useState } from 'react';
+import React, {useState} from 'react';
 
 
 function App() {
+  const [active, setActive] = useState(1)
+
   return (
     <AppStyled bg={bg} className="App">
       <Orb />
       <MainLayout>
-
+        <Navigation active={active} setActive={setActive} />
       </MainLayout>
     </AppStyled>
   );
