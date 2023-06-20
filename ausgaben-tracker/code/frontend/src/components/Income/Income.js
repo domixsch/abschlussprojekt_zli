@@ -6,14 +6,12 @@ function Income() {
   return (
     <IncomeStyled>
       <InnerLayout>
-        heasdfas
+        <h2>Income </h2>
       </InnerLayout>
     </IncomeStyled>
   )
 }
 
-const IncomeStyled = styled.div`
-
-`;
+const IncomeStyled = styled.div``;
 
 export default Income

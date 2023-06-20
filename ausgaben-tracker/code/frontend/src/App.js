@@ -1,35 +1,34 @@
-import bg from './img/bg.png'
-import styled from 'styled-components'
-import { MainLayout } from './styles/layouts';
-import Orb from './components/Orb/Orb';
-import Navigation from './components/Navigation/Navigation';
-import React, {useMemo, useState} from 'react';
-import Dashboard from './components/Dashboard/Dashboard';
-import Income from './components/Income/Income'
-import Expenses from './components/Expenses/Expenses';
-
+import bg from "./img/bg.png";
+import styled from "styled-components";
+import { MainLayout } from "./styles/layouts";
+import Orb from "./components/Orb/Orb";
+import Navigation from "./components/Navigation/Navigation";
+import React, { useMemo, useState } from "react";
+import Dashboard from "./components/Dashboard/Dashboard";
+import Income from "./components/Income/Income";
+import Expenses from "./components/Expenses/Expenses";
 
 function App() {
-  const [active, setActive] = useState(1)
+  const [active, setActive] = useState(1);
 
   const displayData = () => {
-    switch(active){
+    switch (active) {
       case 1:
-        return <Dashboard />
+        return <Dashboard />;
       case 2:
-        return <Dashboard />
+        return <Dashboard />;
       case 3:
-        return <Income />
+        return <Income />;
       case 4:
-        return <Expenses />
+        return <Expenses />;
       default:
-        return <Dashboard />
+        return <Dashboard />;
     }
-  }
+  };
 
   const orbMemo = useMemo(() => {
-    return <Orb />
-  },[])
+    return <Orb />;
+  }, []);
 
   return (
     <AppStyled bg={bg} className="App">
@@ -37,7 +36,7 @@ function App() {
       <MainLayout>
         <Navigation active={active} setActive={setActive} />
         <main>
-          {displayData}
+          {displayData()}
         </main>
       </MainLayout>
     </AppStyled>
@@ -45,23 +44,19 @@ function App() {
 }
 const AppStyled = styled.div`
   height: 100vh;
-  background-image: url(${props => props.bg});
+  background-image: url(${(props) => props.bg});
   position: relative;
-  main{
+  main {
     flex: 1;
     background: rgba(252, 246, 249, 0.78);
-    border: 3px solid #FFFFFF;
+    border: 3px solid #ffffff;
     backdrop-filter: blur(4.5px);
     border-radius: 32px;
     overflow-x: hidden;
-    &::-webkit-scrollbar{
+    &::-webkit-scrollbar {
       width: 0;
     }
   }
 `;
-
-
-
-
 
 export default App;
