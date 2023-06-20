@@ -1,18 +1,20 @@
 import bg from './img/bg.png'
 import styled from 'styled-components'
 import { MainLayout } from './styles/layouts';
+import Orb from './components/Orb/Orb';
+
 
 function App() {
   return (
     <AppStyled bg={bg} className="App">
+      <Orb />
       <MainLayout>
-        
+
       </MainLayout>
     </AppStyled>
   );
 }
-  const AppStyled = styled.div`
-  <AppStyled
+const AppStyled = styled.div`
   height: 100vh;
   background-image: url(${props => props.bg});
   position: relative;
@@ -31,6 +33,6 @@ function App() {
 
 
 
-  
+
 
 export default App;
