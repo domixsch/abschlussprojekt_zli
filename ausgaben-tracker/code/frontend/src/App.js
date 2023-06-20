@@ -4,7 +4,9 @@ import styled from 'styled-components'
 function App() {
   return (
     <AppStyled bg={bg} className="App">
-
+      <main>
+        
+      </main>
     </AppStyled>
   );
 }
