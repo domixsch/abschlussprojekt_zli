@@ -1,9 +1,14 @@
 import React from 'react'
 import styled from 'styled-components';
+import { InnerLayout } from '../../styles/layouts';
 
 function Income() {
   return (
-    <IncomeStyled>Income</IncomeStyled>
+    <IncomeStyled>
+      <InnerLayout>
+        heasdfas
+      </InnerLayout>
+    </IncomeStyled>
   )
 }
 
