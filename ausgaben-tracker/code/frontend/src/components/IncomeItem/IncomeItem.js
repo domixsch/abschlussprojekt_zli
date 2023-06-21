@@ -7,7 +7,7 @@ import Button from '../Button/Button';
 function IncomeItem({
     id,
     title,
-    amount, 
+    amount,
     date,
     category,
     description,
