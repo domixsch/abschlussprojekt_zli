@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useContext, useState } from "react"
 import axios from 'axios'
 
 const BASE_URL = "http://localhost:5000/api/v1/";
@@ -20,9 +20,13 @@ export const GlobalProvider = ({children}) => {
 
     return (
         <GlobalContext.Provider value={{
-            addIncome,
+            addIncome
         }}>
             {children}
         </GlobalContext.Provider>
     )
+}
+
+export const useGlobalContext = () =>{
+    return useContext(GlobalContext)
 }
