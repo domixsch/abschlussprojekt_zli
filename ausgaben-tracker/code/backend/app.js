@@ -1,10 +1,8 @@
-const express = require("express")
-const cors = require("cors");
+const express = require('express')
+const cors = require('cors');
+const { db } = require('./db/db');
+const {readdirSync} = require('fs')
 const app = express()
-const {db} = require('./db/db')
-const {readdirSync} = require('fs');
-const { route } = require("./routes/transactions");
-
 
 require('dotenv').config()
 
@@ -17,12 +15,11 @@ app.use(cors())
 //routes
 readdirSync('./routes').map((route) => app.use('/api/v1', require('./routes/' + route)))
 
-
 const server = () => {
-  db()
-  app.listen(PORT, () => {
-        console.log("listening to port", PORT)
-  })
+    db()
+    app.listen(PORT, () => {
+        console.log('listening to port:', PORT)
+    })
 }
 
 server()
