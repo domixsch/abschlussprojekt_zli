@@ -11,6 +11,7 @@ Für das Abschlussprojekt habe ich mich entschieden einen Ausgaben und Einnahmen
   - [🚀 Technologien](#-technologien)
       - [React](#react)
       - [MongoDB](#mongodb)
+      - [Node.js](#nodejs)
       - [Github](#github)
   - [🕹 Verwendung](#-verwendung)
   - [🔗 Links](#-links)
@@ -45,6 +46,9 @@ npm start
 #### MongoDB
 
 [MongoDB](https://www.mongodb.com/) ist eine äußerst flexible und skalierbare NoSQL-Datenbank, die entwickelt wurde, um große Datenmengen effizient zu verarbeiten. Im Gegensatz zu relationalen Datenbanken speichert MongoDB Daten in flexiblen Dokumenten im BSON-Format. Dank der Unterstützung von JavaScript als Abfragesprache ermöglicht MongoDB eine nahtlose Integration mit JavaScript-Anwendungen und bietet eine benutzerfreundliche Schnittstelle zur Speicherung und Abfrage von Daten.
+
+#### Node.js
+[Node.js](https://nodejs.org/en) ist eine serverseitige JavaScript-Laufzeitumgebung für die Entwicklung skalierbarer Anwendungen außerhalb des Webbrowsers.
 
 #### Github
 
